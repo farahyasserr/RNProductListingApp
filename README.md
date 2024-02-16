@@ -1,7 +1,19 @@
 
 # RNProductListingApp
 
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+The Product Listing App is a mobile application developed using React Native for the purpose of showcasing and managing a list of products. It allows users to browse through various products, view their details, and manage their wishlist.
+
+## Features
+- Browse through a list of products.
+- View detailed information for each product.
+- Add / Remove products to the wishlist for later reference.
+
+## Technologies Used
+- React Native
+- Redux for state management (Redux Toolkit)
+- React Navigation for navigation between screens
+- RTK Query for fetching product data
+- Jest and React Testing Library for testing
 
 # Getting Started
 
@@ -13,11 +25,7 @@ First, you will need to start **Metro**, the JavaScript _bundler_ that ships _wi
 
 To start Metro, run the following command from the _root_ of your React Native project:
 
-```bash
-# using npm
-npm start
-
-# OR using Yarn
+# using Yarn
 yarn start
 ```
 
@@ -27,21 +35,13 @@ Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _roo
 
 ### For Android
 
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
+# using Yarn
 yarn android
 ```
 
 ### For iOS
 
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
+# using Yarn
 yarn ios
 ```
 
@@ -80,3 +80,4 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
