@@ -16,7 +16,7 @@ function ProductDetailsView({ isLoading, productItem }:Props) {
              isLoading ? 
                 <Loader />
             :
-            <ScrollView>
+            <ScrollView style={styles.scrollview}>
                 <Image source={{ uri: productItem?.thumbnail }} style={styles.image}  />
                 <View style={styles.infoContainer}>
                     <View  style={styles.horizontalSubContainer}>
