@@ -12,22 +12,23 @@ const styles = StyleSheet.create({
     marginVertical: 10, 
     marginHorizontal: 4
   },
-    image: {
-        flex: 1,
-        resizeMode: 'contain',
-      },
-      title:{
-        fontWeight: 'bold',
-        marginBottom: 8,
-        textAlign: 'center'
-      },
-      price:{
-        color: colors.gray,
-        textAlign: 'center'
-      },
-      subcontainer:{
-        flexDirection: 'row'
-      }
+  image: {
+    flex: 1,
+    resizeMode: 'contain',
+    marginBottom: 8,
+  },
+  title:{
+    fontWeight: 'bold',
+    marginBottom: 8,
+    textAlign: 'center'
+  },
+  price:{
+    color: colors.gray,
+    textAlign: 'center'
+  },
+  subcontainer:{
+    flexDirection: 'row'
+  }
 })
 
 export default styles

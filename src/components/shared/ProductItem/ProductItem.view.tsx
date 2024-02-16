@@ -22,7 +22,7 @@ function ProductItem(props: Props) {
     return (
         <TouchableOpacity style={styles.mainContainer} onPress={pressItemhandler}>
             <Image source={{ uri: product.thumbnail }} style={styles.image} />
-            <Text style={styles.title}>{product.title}</Text>
+            <Text numberOfLines={2} style={styles.title}>{product.title}</Text>
             <Text style={styles.price}>{product.price} {CURRENCY}</Text>
         </TouchableOpacity>
     )
