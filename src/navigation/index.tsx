@@ -12,7 +12,7 @@ export type BottomTabPropsType<T extends keyof BottomTabParamList> = BottomTabSc
 export type BottomTabNavType<T extends keyof BottomTabParamList> = BottomTabNavigationProp<BottomTabParamList, T>
 
 export type BottomTabParamList = {
-    Home: undefined
+    HomeStack: undefined
     Wishlist: undefined
 }
 
@@ -22,7 +22,7 @@ function TabNavigator(){
   return (
     <Tab.Navigator screenOptions={{tabBarActiveTintColor: colors.primary}} >
       <Tab.Screen 
-      name="Home" 
+      name="HomeStack" 
       component={HomeStack} 
       options={{headerShown: false, tabBarIcon: ({focused})=> <Home size={20} color={focused? colors.primary : colors.black} /> }}/>
       <Tab.Screen 

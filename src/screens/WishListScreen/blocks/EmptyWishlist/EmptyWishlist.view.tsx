@@ -8,7 +8,7 @@ function EmptyWishlist() {
     const navigation = useNavigation<BottomTabNavType<'Wishlist'>>();
 
     const startShoppingHandler = () =>{
-        navigation.navigate('Home')
+        navigation.navigate('HomeStack');
     }
 
     return (
