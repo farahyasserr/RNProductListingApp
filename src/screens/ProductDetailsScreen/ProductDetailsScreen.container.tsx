@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import ProductDetailsView from './ProductDetailsScreen.view'
 import { useDispatch, useSelector } from 'react-redux';
-import { useGetProductDetailsQuery } from '../../services/product/productsApi';
+import { useGetProductDetailsQuery } from '../../services/product/productApi';
 import { TouchableOpacity } from 'react-native';
 import { Heart } from 'lucide-react-native';
 import { colors } from '../../theme/Colors';
@@ -17,7 +17,7 @@ function ProductDetailsScreen({navigation, route}: Props) {
     const dispatch = useDispatch();
     const productId =  route.params?.id
 
-    const { data: productItem, error, isLoading } = useGetProductDetailsQuery(productId);
+    const { data: productItem, isLoading } = useGetProductDetailsQuery(productId);
 
     const wishList = useSelector((state: RootState) => state.wishlist.items)
 
