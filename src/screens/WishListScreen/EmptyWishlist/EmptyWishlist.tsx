@@ -2,13 +2,10 @@ import { View , Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import styles from './EmptyWishlist.styles'
 import { useNavigation } from '@react-navigation/native'
+import { BottomTabNavType } from '../../../navigation';
 
-interface Props {}
-
-function EmptyWishlist(props: Props) {
-    const {} = props
-
-    const navigation = useNavigation();
+function EmptyWishlist() {
+    const navigation = useNavigation<BottomTabNavType<'Wishlist'>>();
 
     const startShoppingHandler = () =>{
         navigation.navigate('Home')
