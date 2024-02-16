@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     image: {
         width: '100%',
         height: Dimensions.get('window').height / 3,
+        resizeMode:'contain'
     },
     infoContainer:{
         paddingHorizontal: 20,

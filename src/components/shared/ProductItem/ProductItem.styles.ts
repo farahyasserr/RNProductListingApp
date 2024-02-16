@@ -4,28 +4,28 @@ import { colors } from "../../../theme/Colors";
 const styles = StyleSheet.create({
   mainContainer:{
     borderRadius: 10, 
-    height: 200,
     width: '48%', 
     backgroundColor: colors.white, 
-    paddingVertical: 8,
-    paddingHorizontal: 6, 
-    marginVertical: 10, 
-    marginHorizontal: 4
+    paddingBottom: 8,
+    marginBottom:24,
   },
   image: {
-    flex: 1,
-    resizeMode: 'contain',
-    marginBottom: 8,
+    height: 160,
+    resizeMode: 'cover',
+    borderTopEndRadius: 10, 
+    borderTopStartRadius: 10,
   },
   title:{
     fontWeight: 'bold',
-    marginBottom: 8,
+    marginBottom: 4,
   },
   price:{
     color: colors.gray,
   },
-  subcontainer:{
-    flexDirection: 'row'
+
+  dataContainer:{
+    marginTop:8,
+    paddingHorizontal: 10
   }
 })
 

@@ -22,6 +22,7 @@ function HomeScreenView({isLoading, products}: Props) {
             renderItem={({item}) => <ProductItem product={item}/> }
             keyExtractor={item => item.id.toString()}
             numColumns={2}
+            columnWrapperStyle={{alignItems:'center', justifyContent:'space-between'}}
             showsVerticalScrollIndicator={false}
             ListHeaderComponent={()=> <Text style={styles.listHeaderText}>Products</Text>}
             />}
