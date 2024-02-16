@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import TabNavigator from './src/navigation/Navigation';
+import TabNavigator from './src/navigation';
 import { NavigationContainer } from '@react-navigation/native';
 import store from './src/store'
 import { Provider } from 'react-redux'
