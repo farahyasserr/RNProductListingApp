@@ -5,7 +5,6 @@ import styles from './ProductItem.styles'
 import { useNavigation } from '@react-navigation/native'
 import { HomeStackNavType } from '../../../../navigation/Home/HomeStack'
 import { currency } from '../../../../data/mock/Currency'
-
 interface Props {
     product: Product
 }

@@ -4,9 +4,7 @@ import { Heart, Home } from 'lucide-react-native';
 import { colors } from '../theme/Colors';
 import { WishListScreen } from '../screens';
 
-
 const Tab = createBottomTabNavigator<BottomTabParamList>();
-
 
 export type BottomTabPropsType<T extends keyof BottomTabParamList> = BottomTabScreenProps<BottomTabParamList, T>
 export type BottomTabNavType<T extends keyof BottomTabParamList> = BottomTabNavigationProp<BottomTabParamList, T>
@@ -15,8 +13,6 @@ export type BottomTabParamList = {
     HomeStack: undefined
     Wishlist: undefined
 }
-
-
 
 function TabNavigator(){
   return (
@@ -32,9 +28,5 @@ function TabNavigator(){
     </Tab.Navigator>
   )
 }
-
-
-
-
 
 export default TabNavigator;

@@ -11,17 +11,14 @@ interface Props{
 }
 
 function ProductDetailsView({ isLoading, productItem }:Props) {
-
     return (
-             isLoading ? 
-                <Loader />
-            :
-            <ScrollView style={styles.scrollview}>
-                <Image source={{ uri: productItem?.thumbnail }} style={styles.image}  />
-                <ProductInfo item={productItem} />
-            </ScrollView>
-
-    )
-}
+        isLoading ? 
+        <Loader />
+        :
+        <ScrollView style={styles.scrollview}>
+            <Image source={{ uri: productItem?.thumbnail }} style={styles.image}  />
+            <ProductInfo item={productItem} />
+        </ScrollView>
+    )}
 
 export default ProductDetailsView

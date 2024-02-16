@@ -5,13 +5,11 @@ import { colors } from '../../../../theme/Colors'
 import styles from './WishlistItem.styles'
 import Product from '../../../../types/Product'
 import { currency } from '../../../../data/mock/Currency'
-
 interface Props {
     item: Product
     addToCartHandler: ()=>void
     removeFromWishlistHandler: (item : Product)=> void
 }
-
 
 function WishlistItem(props: Props) {
 
@@ -26,10 +24,10 @@ function WishlistItem(props: Props) {
                 <Text style={styles.price}>{item.price} {currency}</Text>
             </View>
         </View>
-            <View style={styles.iconsContainer}>
-                <ShoppingCart onPress={addToCartHandler} size={20} color={colors.black} style={styles.cartIcon} />
-                <Heart fill={colors.primary} onPress={() => removeFromWishlistHandler(item)} size={20} color={colors.primary} />
-            </View>
+        <View style={styles.iconsContainer}>
+            <ShoppingCart onPress={addToCartHandler} size={20} color={colors.black} style={styles.cartIcon} />
+            <Heart fill={colors.primary} onPress={() => removeFromWishlistHandler(item)} size={20} color={colors.primary} />
+        </View>
     </View>
     )
 }

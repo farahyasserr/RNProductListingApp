@@ -5,7 +5,6 @@ import { colors } from '../../theme/Colors';
 import { createStackNavigator } from '@react-navigation/stack';
 import { HomeScreen, ProductDetailsScreen } from '../../screens';
 
-
 export type HomeStackPropsType<T extends keyof HomeStackParamList> = StackScreenProps<HomeStackParamList, T>
 export type HomeStackNavType<T extends keyof HomeStackParamList> = StackNavigationProp<HomeStackParamList, T>
 
@@ -17,7 +16,6 @@ export type HomeStackParamList = {
       id: number
     }
   }
-
 
 export function HomeStack() {
     return (

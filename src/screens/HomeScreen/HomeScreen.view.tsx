@@ -4,7 +4,6 @@ import Product from '../../types/Product';
 import Loader from '../../components/shared/Loader/Loader.view';
 import styles from './HomeScreen.styles';
 import { ProductItem } from './blocks';
-
 interface Props {
   isLoading: Boolean
   products?: Product[]

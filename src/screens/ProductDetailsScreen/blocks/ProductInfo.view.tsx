@@ -4,7 +4,6 @@ import { Divider, Rating } from '../../../components';
 import Product from '../../../types/Product';
 import styles from './productInfo.styles';
 import { currency } from '../../../data';
-
 interface Props {
   item?: Product;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import {render, waitFor} from '@testing-library/react-native';
+import { render, waitFor } from '@testing-library/react-native';
 import HomeScreenView from './HomeScreen.view';
 import Product from '../../types/Product';
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { productsMock } from '../../data';
 
 const mockProducts: Product[] = productsMock;

@@ -1,8 +1,8 @@
 import React from 'react';
-import {render, waitFor} from '@testing-library/react-native';
+import { render, waitFor } from '@testing-library/react-native';
 import ProductDetailsView from './ProductDetailsScreen.view';
 import Product from '../../types/Product';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 import { productItemMock } from '../../data';
 
 const MockLoader = () => (
@@ -16,6 +16,7 @@ const MockRating = ({rating}: {rating: number}) => (
     <Text>Rating: {rating}</Text>
   </View>
 );
+
 const MockDivider = () => (
   <View
     testID="mock-divider"

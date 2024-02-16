@@ -3,7 +3,6 @@ import { View, FlatList, ListRenderItem} from 'react-native'
 import Product from '../../types/Product'
 import styles from './WishListScreen.styles'
 import { EmptyWishlist, WishlistItem } from './blocks'
-
 interface Props {
     wishlist: Product[]
     removeFromWishlistHandler: (item : Product)=> void

@@ -2,7 +2,6 @@ import React from 'react'
 import { View , Text, TouchableOpacity } from 'react-native'
 import { Rating } from 'react-native-ratings'
 import styles from './Rating.styles'
-
 interface Props {
     rating?: number
 }
