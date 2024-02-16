@@ -3,15 +3,24 @@ import { colors } from "../../../theme/Colors";
 
 const styles = StyleSheet.create({
     title:{
-        textAlign: 'center',
         fontWeight: 'bold',
         fontSize: 20,
         marginBottom: 10,
-        color: colors.gray
+        color: colors.primary
     },
     description:{
-        color: colors.gray,
-        textAlign: 'center',
+        color: colors.primary,
+        marginBottom: 30,
+    },
+    container:{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    buttonText:{
+        color: colors.secondary,
+        fontSize: 16,
+        fontWeight: 'bold'
     }
 })
 
