@@ -1,9 +1,10 @@
 import { View , Text, Image } from 'react-native'
 import React from 'react'
 import { Heart, ShoppingCart } from 'lucide-react-native'
-import { colors } from '../../../theme/Colors'
+import { colors } from '../../../../theme/Colors'
 import styles from './WishlistItem.styles'
-import Product from '../../../types/Product'
+import Product from '../../../../types/Product'
+import { currency } from '../../../../data/mock/Currency'
 
 interface Props {
     item: Product
@@ -11,7 +12,6 @@ interface Props {
     removeFromWishlistHandler: (item : Product)=> void
 }
 
-const CURRENCY = "AED";
 
 function WishlistItem(props: Props) {
 
@@ -23,7 +23,7 @@ function WishlistItem(props: Props) {
             <Image source={{ uri: item.thumbnail }} style={styles.image} resizeMode={'cover'} />
             <View>
                 <Text numberOfLines={2} style={styles.title}>{item.title}</Text>
-                <Text style={styles.price}>{item.price} {CURRENCY}</Text>
+                <Text style={styles.price}>{item.price} {currency}</Text>
             </View>
         </View>
             <View style={styles.iconsContainer}>

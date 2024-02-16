@@ -6,10 +6,7 @@ import Product from '../../types/Product'
 import { removeItem } from '../../store/reducers/WishList'
 import { Alert } from 'react-native'
 
-interface Props {}
-
-function WishListScreen(props: Props) {
-    const {} = props
+function WishListScreen() {
 
     const dispatch = useDispatch();
     const wishlist = useSelector((state: RootState) => state.wishlist.items)

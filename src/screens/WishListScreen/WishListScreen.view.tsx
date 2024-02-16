@@ -1,9 +1,8 @@
 import React from 'react'
-import { View, FlatList, ListRenderItem, Alert} from 'react-native'
+import { View, FlatList, ListRenderItem} from 'react-native'
 import Product from '../../types/Product'
-import EmptyWishlist from './EmptyWishlist/EmptyWishlist'
 import styles from './WishListScreen.styles'
-import WishlistItem from './WishlistItem/WishlistItem.view'
+import { EmptyWishlist, WishlistItem } from './blocks'
 
 interface Props {
     wishlist: Product[]
@@ -27,7 +26,9 @@ function WishListView(props: Props) {
             <FlatList 
             data={wishlist} 
             renderItem={renderItem} 
-            keyExtractor={item => item.id.toString()}/>
+            keyExtractor={item => item.id.toString()}
+            testID='wishlist'
+            />
             }
         </View>
     )
