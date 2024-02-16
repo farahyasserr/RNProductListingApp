@@ -1,9 +1,9 @@
 import React from 'react'
 import { Text, View, FlatList, ActivityIndicator } from 'react-native'
-import ProductItem from '../../components/shared/ProductItem/ProductItem.view'
 import Product from '../../types/Product';
 import Loader from '../../components/shared/Loader/Loader.view';
 import styles from './HomeScreen.styles';
+import { ProductItem } from './blocks';
 
 interface Props {
     isLoading: Boolean,
