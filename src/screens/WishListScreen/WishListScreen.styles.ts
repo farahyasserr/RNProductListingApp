@@ -5,14 +5,8 @@ const styles = StyleSheet.create({
     mainContainer:{
         flex: 1,
         padding: 20,
-        backgroundColor: colors.primary
+        backgroundColor: colors.white
     },
-    image:{
-        width: 60,
-        height: 60,
-        borderRadius: 10,
-        marginEnd: 18
-    }
 })
 
 export default styles
