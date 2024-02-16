@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeScreenView from './HomeScreen.view'
-import { useGetProductsQuery } from '../../services/productsApi';
+import { useGetProductsQuery } from '../../services/product/productsApi';
 
 interface Props {}
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Product from '../../../types/Product'
-import { Image, Text, TouchableOpacity} from 'react-native'
+import { Image, Text, TouchableOpacity, View} from 'react-native'
 import styles from './ProductItem.styles'
 import { useNavigation } from '@react-navigation/native'
-import { HomeStackNavType } from '../../../navigation/HomeStack'
+import { HomeStackNavType } from '../../../navigation/Home/HomeStack'
 
 interface Props {
     product: Product
@@ -22,8 +22,10 @@ function ProductItem(props: Props) {
     return (
         <TouchableOpacity style={styles.mainContainer} onPress={pressItemhandler}>
             <Image source={{ uri: product.thumbnail }} style={styles.image} />
-            <Text numberOfLines={2} style={styles.title}>{product.title}</Text>
-            <Text style={styles.price}>{product.price} {CURRENCY}</Text>
+            <View style={styles.dataContainer}>
+                <Text numberOfLines={1} style={styles.title}>{product.title}</Text>
+                <Text style={styles.price}>{product.price} {CURRENCY}</Text>
+            </View>
         </TouchableOpacity>
     )
 }

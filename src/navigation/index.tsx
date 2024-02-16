@@ -1,11 +1,21 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import WishListScreen from '../screens/WishListScreen/WishListScreen.container';
-import { HomeStack } from './HomeStack';
+import { BottomTabNavigationProp, BottomTabScreenProps, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { HomeStack } from './Home/HomeStack';
 import { Heart, Home } from 'lucide-react-native';
 import { colors } from '../theme/Colors';
+import { WishListScreen } from '../screens';
 
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<BottomTabParamList>();
+
+
+export type BottomTabPropsType<T extends keyof BottomTabParamList> = BottomTabScreenProps<BottomTabParamList, T>
+export type BottomTabNavType<T extends keyof BottomTabParamList> = BottomTabNavigationProp<BottomTabParamList, T>
+
+export type BottomTabParamList = {
+    Home: undefined
+    Wishlist: undefined
+}
+
 
 
 function TabNavigator(){

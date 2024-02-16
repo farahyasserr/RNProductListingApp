@@ -5,7 +5,6 @@ import TabNavigator from './src/navigation';
 import { NavigationContainer } from '@react-navigation/native';
 import store from './src/store'
 import { Provider } from 'react-redux'
-
 function App(): React.JSX.Element {
 
   return (

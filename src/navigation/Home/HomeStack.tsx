@@ -1,10 +1,9 @@
 
 import { StackNavigationProp, StackScreenProps} from '@react-navigation/stack';
 import { ChevronLeft } from 'lucide-react-native'
-import { colors } from '../theme/Colors';
-import HomeScreen from '../screens/HomeScreen/HomeScreen.container';
-import ProductDetailsScreen from '../screens/ProductDetailsScreen/ProductDetailsScreen.container';
+import { colors } from '../../theme/Colors';
 import { createStackNavigator } from '@react-navigation/stack';
+import { HomeScreen, ProductDetailsScreen } from '../../screens';
 
 
 export type HomeStackPropsType<T extends keyof HomeStackParamList> = StackScreenProps<HomeStackParamList, T>

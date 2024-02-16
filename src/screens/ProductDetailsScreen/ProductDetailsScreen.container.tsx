@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
 import ProductDetailsView from './ProductDetailsScreen.view'
 import { useDispatch, useSelector } from 'react-redux';
-import { useGetProductDetailsQuery } from '../../services/productsApi';
+import { useGetProductDetailsQuery } from '../../services/product/productsApi';
 import { TouchableOpacity } from 'react-native';
 import { Heart } from 'lucide-react-native';
 import { colors } from '../../theme/Colors';
 import { addItem, removeItem } from '../../store/reducers/WishList';
 import Product from '../../types/Product';
 import { RootState } from '../../store/reducers';
-import { HomeStackPropsType } from '../../navigation/HomeStack';
+import { HomeStackPropsType } from '../../navigation/Home/HomeStack';
 
 interface Props extends HomeStackPropsType<'ProductDetails'>{}
 
