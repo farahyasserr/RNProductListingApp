@@ -3,7 +3,7 @@ import Product from '../../../types/Product'
 import { Image, Text, TouchableOpacity} from 'react-native'
 import styles from './ProductItem.styles'
 import { useNavigation } from '@react-navigation/native'
-import { HomeStackNavType } from '../../../navigation/Navigation'
+import { HomeStackNavType } from '../../../navigation/HomeStack'
 
 interface Props {
     product: Product
