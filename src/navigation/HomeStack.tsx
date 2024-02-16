@@ -2,7 +2,7 @@
 import { StackNavigationProp, StackScreenProps} from '@react-navigation/stack';
 import { ChevronLeft } from 'lucide-react-native'
 import { colors } from '../theme/Colors';
-import HomeScreen from '../screens/HomeScreen/HomeScreen.view';
+import HomeScreen from '../screens/HomeScreen/HomeScreen.container';
 import ProductDetailsScreen from '../screens/ProductDetailsScreen/ProductDetailsScreen.container';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -26,7 +26,6 @@ export function HomeStack() {
       screenOptions={{
         headerBackTitleVisible:false,
         headerBackImage: ()=> (<ChevronLeft size={30} color={colors.black} />)
-  
       }}
        >
         <Stack.Screen name="Home" component={HomeScreen} />
