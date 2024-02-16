@@ -9,7 +9,8 @@ The Product Listing App is a mobile application developed using React Native for
 - Add / Remove products to the wishlist for later reference.
 
 ## Technologies Used
-- React Native
+- React Native cli
+- Typescript
 - Redux for state management (Redux Toolkit)
 - React Navigation for navigation between screens
 - RTK Query for fetching product data
