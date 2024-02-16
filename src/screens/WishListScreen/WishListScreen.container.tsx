@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import WishListView from './WishListScreen.view'
 
 interface Props {}
 
@@ -7,9 +7,7 @@ function WishListScreen(props: Props) {
     const {} = props
 
     return (
-        <View>
-            <Text>Wishlist screen</Text>
-        </View>
+        <WishListView />
     )
 }
 
