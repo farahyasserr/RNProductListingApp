@@ -21,7 +21,7 @@ function WishListView(props: Props) {
 
     return (
         <View style={styles.mainContainer}>
-            { wishlist.length ===0 ?
+            { wishlist.length === 0 ?
             <EmptyWishlist />:
             <FlatList 
             data={wishlist} 
