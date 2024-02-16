@@ -1,0 +1,62 @@
+export const productsMock = [
+  {
+    id: 1,
+    title: 'iPhone 9',
+    description: 'An apple mobile which is nothing like apple',
+    price: 549,
+    discountPercentage: 12.96,
+    rating: 4.69,
+    stock: 94,
+    brand: 'Apple',
+    category: 'smartphones',
+    thumbnail: 'https://cdn.dummyjson.com/product-images/1/thumbnail.jpg',
+    images: [
+      'https://cdn.dummyjson.com/product-images/1/1.jpg',
+      'https://cdn.dummyjson.com/product-images/1/2.jpg',
+      'https://cdn.dummyjson.com/product-images/1/3.jpg',
+      'https://cdn.dummyjson.com/product-images/1/4.jpg',
+      'https://cdn.dummyjson.com/product-images/1/thumbnail.jpg',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Freckle Treatment Cream- 15gm',
+    description:
+      "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
+    price: 70,
+    discountPercentage: 16.99,
+    rating: 4.06,
+    stock: 140,
+    brand: 'Fair & Clear',
+    category: 'skincare',
+    thumbnail: 'https://cdn.dummyjson.com/product-images/20/thumbnail.jpg',
+    images: [
+      'https://cdn.dummyjson.com/product-images/20/1.jpg',
+      'https://cdn.dummyjson.com/product-images/20/2.jpg',
+      'https://cdn.dummyjson.com/product-images/20/3.jpg',
+      'https://cdn.dummyjson.com/product-images/20/4.jpg',
+      'https://cdn.dummyjson.com/product-images/20/thumbnail.jpg',
+    ],
+  },
+];
+
+
+export const productItemMock = {
+  id: 1,
+  title: 'iPhone 9',
+  description: 'An apple mobile which is nothing like apple',
+  price: 549,
+  discountPercentage: 12.96,
+  rating: 4.69,
+  stock: 94,
+  brand: 'Apple',
+  category: 'smartphones',
+  thumbnail: 'https://cdn.dummyjson.com/product-images/1/thumbnail.jpg',
+  images: [
+    'https://cdn.dummyjson.com/product-images/1/1.jpg',
+    'https://cdn.dummyjson.com/product-images/1/2.jpg',
+    'https://cdn.dummyjson.com/product-images/1/3.jpg',
+    'https://cdn.dummyjson.com/product-images/1/4.jpg',
+    'https://cdn.dummyjson.com/product-images/1/thumbnail.jpg',
+  ],
+};
