@@ -5,9 +5,7 @@ import { useGetProductsQuery } from '../../services/product/productApi';
 function HomeScreen() {
     const { data , isLoading } = useGetProductsQuery();
 
-    return (
-        <HomeScreenView products={data?.products} isLoading={isLoading}/>
-    )
+  return <HomeScreenView products={data?.products} isLoading={isLoading} />;
 }
 
-export default HomeScreen
+export default HomeScreen;

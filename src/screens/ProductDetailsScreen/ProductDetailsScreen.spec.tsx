@@ -29,7 +29,7 @@ jest.mock('../../components', () => ({
   Divider: () => <MockDivider />,
 }));
 
-const mockProduct: Product =  productItemMock;
+const mockProduct: Product = productItemMock;
 
 describe('ProductDetailsView', () => {
   test('renders loader when isLoading is true', () => {
