@@ -9,7 +9,6 @@ interface Props {
 
 function RatingView(props: Props) {
     const {rating} = props
-    console.log("rating", rating)
 
     return (
         <View style={styles.container}>

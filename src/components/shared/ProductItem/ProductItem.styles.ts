@@ -20,11 +20,9 @@ const styles = StyleSheet.create({
   title:{
     fontWeight: 'bold',
     marginBottom: 8,
-    textAlign: 'center'
   },
   price:{
     color: colors.gray,
-    textAlign: 'center'
   },
   subcontainer:{
     flexDirection: 'row'
