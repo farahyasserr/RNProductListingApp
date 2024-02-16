@@ -1,5 +1,5 @@
 import React from 'react'
-import { View , Text } from 'react-native'
+import { View , Text, TouchableOpacity } from 'react-native'
 import { Rating } from 'react-native-ratings'
 import styles from './Rating.styles'
 
@@ -19,6 +19,7 @@ function RatingView(props: Props) {
             readonly
             startingValue={rating}
             />
+            <TouchableOpacity><Text style={styles.reviewsText}>Reviews</Text></TouchableOpacity>
         </View>
     )
 }

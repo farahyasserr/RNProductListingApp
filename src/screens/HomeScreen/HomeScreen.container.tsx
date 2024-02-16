@@ -1,14 +1,9 @@
 import React from 'react'
 import HomeScreenView from './HomeScreen.view'
-import { useGetProductsQuery } from '../../services/product/productsApi';
+import { useGetProductsQuery } from '../../services/product/productApi';
 
-interface Props {}
-
-function HomeScreen(props: Props) {
-    const {} = props
-
+function HomeScreen() {
     const { data , isLoading } = useGetProductsQuery();
-
 
     return (
         <HomeScreenView products={data?.products} isLoading={isLoading}/>
