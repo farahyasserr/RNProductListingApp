@@ -3,7 +3,7 @@ import {render, waitFor} from '@testing-library/react-native';
 import ProductDetailsView from './ProductDetailsScreen.view';
 import Product from '../../types/Product';
 import {View, Text} from 'react-native';
-import { productItemMock } from '../../data/mock/Product';
+import { productItemMock } from '../../data';
 
 const MockLoader = () => (
   <View testID="mock-loader">

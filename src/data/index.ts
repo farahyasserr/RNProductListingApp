@@ -1,5 +1,4 @@
-import { productItemMock , productsMock} from "./mock/Product";
-import { wishlistMock } from "./mock/Wishlist";
-import { currency } from "./mock/Currency";
+export { currency } from './mock/Currency'
+export { productItemMock , productsMock } from './mock/Product'
+export { wishlistMock } from './mock/Wishlist'
 
-export default {productItemMock, productsMock, wishlistMock, currency}

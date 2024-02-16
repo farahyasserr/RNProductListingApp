@@ -1,8 +1,8 @@
 import React from 'react';
 import {render, waitFor} from '@testing-library/react-native';
 import WishListScreen from './WishListScreen.view';
-import { wishlistMock } from '../../data/mock/Wishlist';
 import { NavigationContainer } from '@react-navigation/native';
+import { wishlistMock } from '../../data';
 
 describe('WishlistView', () => {
   test('renders emptyWishList when list is empty', () => {
